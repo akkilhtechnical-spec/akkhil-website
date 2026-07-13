@@ -1,12 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akkhil Technical Services Co. LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akkhil Technical Services Co. LLC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#fff;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,.08);
+      z-index:1000;
+    }
+
+    nav{
+      width:90%;
+      max-width:1300px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:80px;
+    }
+
+    .logo{
+      font-size:26px;
+      font-weight:700;
+      color:#003366;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    nav ul li a:hover{
+      color:#0066cc;
+    }
+
+    .quote-btn{
+      background:#0066cc;
+      color:white;
+      padding:12px 22px;
+      border-radius:6px;
+    }
+
+    .hero{
+      margin-top:80px;
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,25,60,.75),rgba(0,25,60,.75)),
+      url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600")
+      center/cover;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero-content{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:700px;
+      font-size:20px;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#d4af37;
+      color:white;
+      text-decoration:none;
+      padding:16px 35px;
+      border-radius:6px;
+      font-weight:600;
+    }
+
+    section{
+      width:90%;
+      max-width:1200px;
+      margin:100px auto;
+    }
+
+    h2{
+      color:#003366;
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .card{
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    footer{
+      background:#0d1d33;
+      color:white;
+      padding:60px;
+      text-align:center;
+    }
+
+  </style>
 </head>
-<body style="font-family:Arial,sans-serif;text-align:center;padding:80px;">
-    <h1>Welcome to Akkhil Technical Services Co. LLC</h1>
-    <p>Our premium website is under development.</p>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+AKKHIL TECHNICAL
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<a href="#" class="quote-btn">
+Request Quote
+</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Building Premium Interior Spaces Across UAE
+</h1>
+
+<p>
+Akkhil Technical Services Co. LLC provides Interior Fit-Out, HVAC, MEP,
+Healthcare Solutions, Joinery and Turnkey Contracting services throughout
+the United Arab Emirates.
+</p>
+
+<a href="#" class="btn">
+Get Started
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+About Us
+</h2>
+
+<p>
+Akkhil Technical Services Co. LLC is a UAE-based technical contracting
+company specializing in premium interior fit-out, HVAC, MEP, healthcare
+interiors, commercial renovations and turnkey project execution.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+Our Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Interior Fit-Out</h3>
+<p>Commercial, Retail, Hospitality & Residential.</p>
+</div>
+
+<div class="card">
+<h3>HVAC</h3>
+<p>DX Systems, Ventilation, Ducting & Cooling Solutions.</p>
+</div>
+
+<div class="card">
+<h3>MEP</h3>
+<p>Electrical, Plumbing, Fire Fighting & ELV Systems.</p>
+</div>
+
+<div class="card">
+<h3>Healthcare</h3>
+<p>Hospital Fit-Out, Bed Head Panels & Medical Furniture.</p>
+</div>
+
+<div class="card">
+<h3>Joinery</h3>
+<p>Reception Counters, Cabinets, Wall Cladding & Furniture.</p>
+</div>
+
+<div class="card">
+<h3>Maintenance</h3>
+<p>Annual Maintenance Contracts and Facility Services.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="color:white;">
+Akkhil Technical Services Co. LLC
+</h2>
+
+<p>
+Interior Fit-Out • HVAC • MEP • Joinery • Healthcare
+</p>
+
+<br>
+
+<p>
+📞 +971 52 486 1146
+</p>
+
+<p>
+✉️ akkilh.technical@gmail.com
+</p>
+
+<p style="margin-top:20px;">
+© 2026 Akkhil Technical Services Co. LLC
+</p>
+
+</footer>
+
 </body>
 </html>
