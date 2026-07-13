@@ -1,0 +1,226 @@
+/* ================================
+   AKKHIL TECHNICAL SERVICES CO. LLC
+   Luxury Corporate Theme
+================================ */
+
+:root{
+    --primary:#07143B;
+    --secondary:#D4AF37;
+    --white:#ffffff;
+    --light:#f8f9fc;
+    --dark:#1d1d1d;
+    --gray:#666;
+    --shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:var(--dark);
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:var(--shadow);
+    z-index:999;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:85px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:var(--primary);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:var(--dark);
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:var(--secondary);
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:8px;
+    background:var(--secondary);
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(7,20,59,.82),rgba(7,20,59,.82)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600") center/cover;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* SECTION */
+
+section{
+    padding:100px 0;
+}
+
+section h2{
+    font-size:42px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+section p{
+    color:var(--gray);
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+.project{
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.project img{
+    transition:.4s;
+}
+
+.project:hover img{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--primary);
+    color:white;
+    padding:60px;
+    text-align:center;
+}
+
+footer a{
+    color:var(--secondary);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+nav{
+flex-direction:column;
+height:auto;
+padding:20px;
+}
+
+nav ul{
+margin-top:20px;
+flex-direction:column;
+text-align:center;
+}
+
+}
